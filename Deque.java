@@ -110,7 +110,7 @@ public class Deque<Item> implements Iterable<Item> {
 
 		Item item = last.item;
 		last.item = null;
-		
+
 		if (!(last.prev == null)) {
 			Node newLast = last.prev;
 			newLast.next = null;
@@ -132,7 +132,7 @@ public class Deque<Item> implements Iterable<Item> {
 		@Override
 		public boolean hasNext() {
 			// TODO Auto-generated method stub
-			return size>1;
+			return size > 1;
 		}
 
 		@Override
